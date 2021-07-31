@@ -1,13 +1,14 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        jcenter()
         google()
+        mavenCentral()
     }
     resolutionStrategy {
         eachPlugin {
             if (requested.id.id == "com.android.application") {
-                useModule("com.android.tools.build:gradle:${requested.version}")
+//                useModule("com.android.tools.build:gradle:${requested.version}")
+                useModule("com.android.tools.build:gradle:gradle:4.2.1")
             }
         }
     }
